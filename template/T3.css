@@ -1,0 +1,157 @@
+body {
+  background-image: url(https://subtlepatterns.com/patterns/gplaypattern.png);
+  background-position: center center;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Noto Sans TC', sans-serif;
+  /* font-family: 'McLaren', cursive; */
+}
+
+div.business-card {
+  height: 427px;
+  width: 320px;
+  margin-left: -160px;
+  margin-top: -213.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+div.business-card:hover .flipper {
+  -webkit-transform: rotateY(180deg) rotateZ(90deg);
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+
+div.flipper {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  -webkit-transform-origin: center 160px;
+  transform-origin: center 160px;
+}
+
+div.front,
+div.back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 427px;
+  width: 320px;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+}
+
+div.front {
+  /* 前面背景白 */
+  background-color: white;
+  z-index: 0;
+}
+
+div.front:before,
+div.front:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 160px;
+  border-style: solid;
+  border-color: transparent;
+  /* 邊框透明 */
+}
+
+div.front:before {
+  /* 因為前面有設成區塊 所以這裡才可以呈現區塊顏色 不然的話會是僅有邊框顏色 */
+  border-top-color: #B36A5E;
+  border-left-color: #B36A5E;
+  z-index: 2;
+}
+
+div.front:after {
+  border-top-color: #C97C5D;
+  border-right-color: #C97C5D;
+}
+
+.name {
+  position: absolute;
+  bottom: 40px;
+  left: 75px;
+}
+
+.name span {
+  display: block;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.name span.first {
+  color: #C97C5D;
+}
+
+.name span.title {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+div.back {
+  background-color: #C97C5D;
+  color: white;
+  width: 427px;
+  height: 320px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: rotateY(180deg) rotateZ(90deg);
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+
+.left {
+  /*背面的左邊方框*/
+  float: left;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.right {
+  /*背面的右邊方框*/
+  float: right;
+  background-color: #B36A5E;
+  width: 60%;
+  height:235px;
+  margin: 40px 0 ;
+  position: relative;
+}
+i{
+  font-size: 30px;
+  padding:15px 10px;
+  /* background-color: red; */
+}
+.right-content{
+  display: inline-block;
+  width:200px;
+  height:40px;
+  font-size:18px;
+  line-height: 25px;
+  word-wrap: break-word;
+}
+p{
+  margin:5% 0;
+  /* vertical-align:bottom; */
+}
+.cir-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 50%;
+  margin-left: 6%;
+  background-size: cover;
+  z-index: 5;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

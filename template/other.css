@@ -1,0 +1,67 @@
+.main {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border: 2px solid black;
+    overflow:hidden;
+    position: relative;
+}
+.cir-pic {
+    width: 220px;
+    height: 220px;
+    border: 2px black;
+    border-radius: 50%;
+    margin: 10px 10px;
+    background-size: cover;
+}
+.name{
+    width:240px;
+    padding:0px 10px;
+    height: 40px;
+    float:right;
+    text-align: right;
+    position: absolute;
+    top:80px;
+    right:10px;
+    font-size: 25px;
+}
+.pos-title{
+    width:240px;
+    padding:0px 10px;
+    float:right;
+    text-align: right;
+    position: absolute;
+    top:115px;
+    right:10px;
+    font-size: 10px;
+}
+.skill{
+    width:240px;
+    padding:0px 10px;
+    float:right;
+    text-align: right;
+    position: absolute;
+    top:140px;
+    right:10px;
+    font-size: 15px;
+}
+.phone{
+    width:240px;
+    padding:0px 10px;
+    float:right;
+    text-align: right;
+    position: absolute;
+    top:215px;
+    right:10px;
+    font-size: 15px;
+}
+.email{
+    width:240px;
+    padding:0px 10px;
+    float:right;
+    text-align: right;
+    position: absolute;
+    top:235px;
+    right:10px;
+    font-size: 15px;
+}
