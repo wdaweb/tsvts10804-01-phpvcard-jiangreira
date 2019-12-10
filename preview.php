@@ -1,7 +1,6 @@
 <?php
 session_start();
 if(empty($_SESSION)) header('location:index.php');
-// var_dump($_SESSION);
 
 ?>
 
@@ -13,7 +12,7 @@ if(empty($_SESSION)) header('location:index.php');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="template/T4.css">
+  <link rel="stylesheet" href="template/<?=$_SESSION['template']?>.css">
   <link rel="stylesheet" href="template/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=McLaren|Noto+Sans+TC&display=swap" rel="stylesheet">
 </head>

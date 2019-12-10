@@ -1,15 +1,3 @@
-<!-- 
-copy($_FILES['photo']['tmp_name'],"imgs/".time()."_".$_FILES['photo']['name']);
-$content=$_POST;
-$content['photo']=$_FILES['photo']['name'];
-var_dump($content);
-session_start();
-$_SESSION['content']=$content;
-
-header('location:preview.php');
-// 還沒有下一個防呆轉址 -->
-
-
 <?php
 if(!empty($_POST)){
     if(isset($_POST['Name'])){
